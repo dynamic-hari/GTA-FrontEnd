@@ -1,0 +1,150 @@
+	* 
+	{
+		box-sizing: border-box;
+	}
+	body 
+	{
+		margin: 0;
+		background-color:black;
+	}
+	.moving{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	animation-name: example;
+	animation-duration: 3s;
+	animation-iteration-count: 100;
+	}
+	/* Standard syntax */
+	@keyframes example {
+	0% {background-color:Chartreuse; left:300px; top:0px;}
+	25% {background-color:yellow; left:900px; top:0px;}
+	50% {background-color:turquoise; left:900px; top:300px;}
+	75% {background-color:forestgreen; left:300px; top:300px;}
+	100% {background-color:Chartreuse ; left:300px; top:0px;}
+	}
+	.header 
+		{
+			background-color:black;
+			padding: 20px;
+			text-align: center;
+			color:silver;
+		}
+	.container
+		{
+			top:0px;
+			left: 0px;
+			width:100%;
+			background-color:black;
+			border: opx solid;
+			height:1%;
+			color:silver;
+		}
+	.topnav 
+		{
+			overflow: hidden;
+			background-color: #333;
+		}
+	.topnav a 
+		{
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+	.topnav a:hover
+		{
+			background-color: #ddd;
+			color: black;
+		}
+	.column 
+		{
+			float: left;
+			padding: 10px;
+		}	
+	.column.side
+		{
+			width: 35%;
+		}
+	.column.middle 
+		{
+			width: 30%;
+		}
+	.row:after 
+		{
+			content: "";
+			display: table;
+			clear: both;
+		}
+	@media screen and (max-width: 600px) 
+		{
+		.column.side, .column.middle 
+			{
+				width: 100%;
+			}
+		}
+	p.silver
+		{
+			color:white;
+			font-family:Bradley Hand ITC,jokerman;
+		}
+	img.mar
+		{
+			margin:0px;
+			margin-top:1px;
+		}
+	.container1
+		{
+			border:1px solid;
+			border-color:orange;
+			border-width:2px ;
+			margin-top:0px;
+			padding:1px;
+		}
+	input[type="button"]
+		{
+			background-color:gold;
+			color:red;
+			width:25%;
+			align:center;
+		}	
+	input[type=text] 
+		{
+			width: 10%;
+			box-sizing: border-box;
+			border: 2px solid silver;
+			border-radius: 1px;
+			font-size: 8px;
+			color:black;
+			border-left:1px;
+			background-color: silver;
+			background-repeat: no-repeat;
+			padding: 3px 3px 0px 0px;
+			font-weight:bolder;
+		}
+	.button:hover
+		{
+			background-color: silver;
+			cursor:pointer;
+		}	
+	p.gold
+		{
+			color:gold;
+			font-weight:bolder;
+			
+		}
+	.container1:hover
+		{
+			background-color: #272423;
+			cursor:pointer;
+			color:red;
+		}
+	p.head
+		{
+			float:middle;
+			font-size:;
+			color:red;
+			font-family:jokerman,callestar;
+		}
